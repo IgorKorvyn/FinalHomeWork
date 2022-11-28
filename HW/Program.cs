@@ -12,7 +12,7 @@
 [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 [“Russia”, “Denmark”, “Kazan”] → [] */
 
-
+Console.Clear();
 int n = 4;
 int size = 15;
 string[] arrayOne = new string[size];
@@ -24,8 +24,7 @@ if (SizeSecondArray(arrayOne) == 0)
 }
 else
 {
-    Console.Clear();
-    Console.WriteLine($"Первоначальный массив, заполненный рандомными значениями и новый массив, включающий в себя значения из первоначального, равные или меньше 3-х символов");
+    Console.WriteLine($"Первоначальный массив, заполненный случайными значениями и новый массив, включающий в себя значения из первоначального, равные или меньше 3-х символов");
     Console.WriteLine();
     string[] arrayTwo = NeedsElemArray(arrayOne);
     Console.WriteLine($"[{String.Join(", ", arrayOne)}] => [{String.Join(", ", arrayTwo)}]");
